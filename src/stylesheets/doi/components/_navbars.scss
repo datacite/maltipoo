@@ -131,21 +131,21 @@ For navigation within a page we use pills.
         }
     }
 
-    .btn-default{
+    .btn-secondary{
         color: $white-color !important;
         border-color: $white-color !important;
         @include opacity(.9);
     }
-    .btn-default.btn-fill{
+    .btn-secondary.btn-fill{
         color: $dark-gray;
         background-color: $white-color;
         @include opacity(.9);
     }
-    .btn-default.btn-fill:hover,
-    .btn-default.btn-fill:focus,
-    .btn-default.btn-fill:active,
-    .btn-default.btn-fill.active,
-    .open .dropdown-toggle.btn-fill.btn-default{
+    .btn-secondary.btn-fill:hover,
+    .btn-secondary.btn-fill:focus,
+    .btn-secondary.btn-fill:active,
+    .btn-secondary.btn-fill.active,
+    .open .dropdown-toggle.btn-fill.btn-secondary{
         border-color: $white-color;
         @include opacity(1);
     }
@@ -199,7 +199,7 @@ For navigation within a page we use pills.
 
     }
 
-    &:not(.navbar-transparent) .btn-default:hover{
+    &:not(.navbar-transparent) .btn-secondary:hover{
         color: $info-color;
         border-color: $info-color;
     }
@@ -254,7 +254,7 @@ For navigation within a page we use pills.
 
     }
 
-    &:not(.navbar-transparent) .btn-default:hover{
+    &:not(.navbar-transparent) .btn-secondary:hover{
         color: $info-color;
         border-color: $info-color;
     }
