@@ -72,38 +72,38 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 /*       CT colors          */
 .ct-blue,
-.checkbox-blue.checkbox.checked .second-icon,
-.checkbox-blue.checkbox.checked,
-.radio-blue.radio.checked .second-icon,
-.radio-blue.radio.checked{
+.form-check-blue.form-check.checked .second-icon,
+.form-check-blue.form-check.checked,
+.form-check-blue.form-check.checked .second-icon,
+.form-check-blue.form-check.checked{
     color: $primary-color;
 }
 .ct-azure,
-.checkbox-azure.checkbox.checked .second-icon,
-.radio-azure.radio.checked .second-icon,
-.checkbox-azure.checkbox.checked,
-.radio-azure.radio.checked{
+.form-check-azure.form-check.checked .second-icon,
+.form-check-azure.form-check.checked .second-icon,
+.form-check-azure.form-check.checked,
+.form-check-azure.form-check.checked{
     color: $info-color;
 }
 .ct-green,
-.checkbox-green.checkbox.checked .second-icon,
-.radio-green.radio.checked .second-icon,
-.checkbox-green.checkbox.checked,
-.radio-green.radio.checked{
+.form-check-green.form-check.checked .second-icon,
+.form-check-green.form-check.checked .second-icon,
+.form-check-green.form-check.checked,
+.form-check-green.form-check.checked{
     color: $success-color;
 }
 .ct-orange,
-.checkbox-orange.checkbox.checked .second-icon,
-.radio-orange.radio.checked .second-icon,
-.checkbox-orange.checkbox.checked,
-.radio-orange.radio.checked{
+.form-check-orange.form-check.checked .second-icon,
+.form-check-orange.form-check.checked .second-icon,
+.form-check-orange.form-check.checked,
+.form-check-orange.form-check.checked{
     color: $warning-color;
 }
 .ct-red,
-.checkbox-red.checkbox.checked .second-icon,
-.radio-red.radio.checked .second-icon,
-.checkbox-red.checkbox.checked,
-.radio-red.radio.checked{
+.form-check-red.form-check.checked .second-icon,
+.form-check-red.form-check.checked .second-icon,
+.form-check-red.form-check.checked,
+.form-check-red.form-check.checked{
     color: $danger-color;
 }
 input.ct-blue + span.switch-left,
@@ -163,10 +163,10 @@ p.landing-page-centered {
   z-index: -1;
 }
 
-.help-block { font-size: $font-size-small; margin-bottom: 20px; }
-.help-block.has-error { color: $danger-color !important; }
-.help-block.has-success { color: $success-color !important; }
-.help-block.has-warning { color: $warning-color !important; }
+.form-text { font-size: $font-size-small; margin-bottom: 20px; }
+.form-text.has-error { color: $danger-color !important; }
+.form-text.has-success { color: $success-color !important; }
+.form-text.has-warning { color: $warning-color !important; }
 
 .input.has-error { color: $danger-color !important; }
 .input.has-success { color: $success-color !important; }
