@@ -310,16 +310,16 @@
     .subscribe-line .form-control{
         margin: $margin-bottom;
     }
-    .social-line.pull-right{
+    .social-line.float-right{
         float: none;
     }
-    .footer nav.pull-left{
+    .footer nav.float-left{
         float: none !important;
     }
     .footer:not(.footer-big) nav > ul li{
         float: none;
     }
-    .social-area.pull-right{
+    .social-area.float-right{
         float: none !important;
     }
     .form-control + .form-control-feedback{
