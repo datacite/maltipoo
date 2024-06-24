@@ -43,7 +43,7 @@
     border-bottom: 1px solid $light-gray;
     margin-bottom: 30px;
 
-    .nav > li > a{
+    .nav > li > a, .nav-link {
         padding-bottom: 20px;
     }
 }

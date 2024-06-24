@@ -111,7 +111,7 @@ For navigation within a page we use pills.
             color: $white-color;
             @include opacity(1);
         }
-        .nav > li > a.btn:hover{
+        .nav > li > a.btn:hover, .nav-link:hover {
             background-color: transparent;
         }
 
