@@ -39,19 +39,19 @@ category: Components
     }
 }
 
-.text-primary, .text-findable, .panel-footer .text-findable {
+.text-primary, .text-findable, .card-footer .text-findable {
     color: $primary-color;
 }
-.text-default, .text-inactive, .panel-footer .text-inactive {
+.text-default, .text-inactive, .card-footer .text-inactive {
     color: $default-color;
 }
-.text-info, .text-registered, .panel-footer .text-registered {
+.text-info, .text-registered, .card-footer .text-registered {
     color: $info-color;
 }
 .text-success {
     color: $success-color;
 }
-.text-warning, .text-draft, .panel-footer .text-draft {
+.text-warning, .text-draft, .card-footer .text-draft {
     color: $warning-color;
 }
 .text-danger {
