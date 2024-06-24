@@ -126,7 +126,7 @@
         background-color: $default-color;
         color: #FFFFFF;
     }
-    > li.active .badge {
+    > li.active .badge-pill {
       color: white;
       background-color: $default-color;
       border: 1px solid white;
@@ -139,7 +139,7 @@
         border-radius: 0 30px 30px 0;
     }
 
-    .badge {
+    .badge-pill {
       color: $default-color;
       font-size: 14px;
       font-weight: normal;

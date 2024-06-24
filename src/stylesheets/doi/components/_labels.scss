@@ -16,7 +16,7 @@ category: Components
 
 */
 
-.label {
+.badge {
   padding: 0.4em 0.6em;
   border-radius: 10px;
   color: #ffffff;
@@ -25,27 +25,27 @@ category: Components
   display: inline-block;
   margin-bottom: 3px;
 }
-.label-primary {
+.badge-primary {
   background-color: $primary-color;
 }
-.label-info {
+.badge-info {
   background-color: $info-color;
 }
-.label-success {
+.badge-success {
   background-color: $success-color;
 }
-.label-warning {
+.badge-warning {
   background-color: $warning-color;
 }
-.label-danger {
+.badge-danger {
   background-color: $danger-color;
 }
-.label-allocating {
+.badge-allocating {
   color: $darker-gray;
   background-color: $light-blue;
   margin-left: 10px;
 }
-.label-non-allocating {
+.badge-non-allocating {
   color: $darker-gray;
   background-color: $light-red;
   margin-left: 10px;
@@ -53,48 +53,48 @@ category: Components
 label.search-form {
   display: block;
 }
-.label-primary-inv {
+.badge-primary-inv {
   color: $primary-color;
   background-color: #ffffff;
   border: 2px solid $primary-color;
 }
-.label-info-inv {
+.badge-info-inv {
   color: $info-color;
   background-color: #ffffff;
   border: 2px solid $info-color;
 }
-.label-default-inv {
+.badge-default-inv {
   color: $dark-gray;
   background-color: #ffffff;
   border: 2px solid $dark-gray;
 }
-.label-warning-inv {
+.badge-warning-inv {
   color: $warning-color;
   background-color: #ffffff;
   border: 2px solid $warning-color;
 }
-.label-sm {
+.badge-sm {
   font-size: $font-size-xs;
 }
 .subject {
   margin-top: 6px;
 
-  .label-primary {
+  .badge-primary {
     color: $primary-color;
     background-color: #ffffff;
     border: 2px solid $primary-color;
   }
-  .label-info {
+  .badge-info {
     color: $info-color;
     background-color: #ffffff;
     border: 2px solid $info-color;
   }
-  .label-default {
+  .badge-default {
     color: $dark-gray;
     background-color: #ffffff;
     border: 2px solid $dark-gray;
   }
-  .label-sm {
+  .badge-sm {
     font-size: $font-size-xs;
   }
 }
