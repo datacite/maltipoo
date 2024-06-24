@@ -11,13 +11,13 @@
     }
 }
 
-.carousel-control.left{
+.carousel-control-prev {
     height: 30px;
     top: 50%;
     width: 30px;
     left: 8%;
 }
-.carousel-control.right{
+.carousel-control-next {
     height: 30px;
     right: 8%;
     top: 50%;
@@ -31,17 +31,17 @@
     font-size: 26px;
     margin: 2px;
 }
-.carousel-control.left, .carousel-control.right {
+.carousel-control-prev, .carousel-control-next {
     background-image: none;
 }
 .carousel-inner{
     background-color: #d6d2cc;
 }
-.carousel-inner > .item {
+.carousel-inner > .carousel-item {
     padding: 50px;
 }
-.carousel-inner > .item > img, 
-.carousel-inner > .item > a > img{
+.carousel-inner > .carousel-item > img, 
+.carousel-inner > .carousel-item > a > img{
     border-radius: $border-radius-extreme;
     box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
     margin-left: 25%;
