@@ -119,7 +119,7 @@
             overflow-y:scroll;
             height: 95%;
         }
-        .nav > li{
+        .nav > li, .nav-item {
 //             border-bottom: 1px solid;
             &:last-child {
             border-bottom: 0;
