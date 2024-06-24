@@ -10,7 +10,7 @@
   border: 0 !important;
   box-shadow: none !important;
 
-  .panel-body {
+  .card-body {
     background-color: $white-bg;
   }
 
@@ -50,10 +50,10 @@
     float: left;
     max-width: 170px;
   }
-  .panel-body {
+  .card-body {
     padding-top: 3px;
   }
-  .panel-body + .panel-body {
+  .card-body + .card-body {
     border-top: none;
   }
 }
