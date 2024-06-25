@@ -18,7 +18,7 @@ Note: Node 22+  required
 3. `yarn install`
 4. `yarn build`
 
-The generated `css` files are placed in `assets/stylesheets`
+The generated `css` files are placed in `dist/stylesheets`
 
 ## Issues
 
