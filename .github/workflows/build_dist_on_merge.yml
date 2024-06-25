@@ -2,11 +2,10 @@ name: Build and Commit Dist Files On Merge
 
 on:
   pull_request:
-    types: [closed]
+    types: [synchronize, opened, reopened]
 
 jobs:
   build:
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
