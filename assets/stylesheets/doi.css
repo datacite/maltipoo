@@ -8334,10 +8334,6 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 340px;
-}
-
 a {
   color: #3498db;
   -webkit-transition: all 150ms linear;
@@ -10447,12 +10443,12 @@ category: Components
   color: #e74c3c;
 }
 
-.alert-info {
+.alert[bsstyle=info] {
   background-color: #FFFFFF;
   color: #3498db;
   border: 2px solid #3498db;
 }
-.alert-info i {
+.alert[bsstyle=info] i {
   color: #3498db;
 }
 
@@ -11409,7 +11405,7 @@ category: Components
 }
 .panel-transparent .card-body {
   border: 0;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 0;
   margin-bottom: 0;
 }
 .panel-transparent .card-footer {
@@ -11782,10 +11778,7 @@ h3.member > a, h3.member > i, h3.member > .btn-icon {
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  height: 340px;
   font-size: 16px;
   color: #a3acb2;
   background-color: #f9fafa;
@@ -13852,7 +13845,6 @@ h3.member-results, h3.provider-results, h3.user-results, h3.doi-results, h3.work
   color: #1abc9c;
   border-bottom: 1px solid #cdd2d5;
   padding: 0;
-  margin: 0 0 0.35em 10px;
 }
 h3.member-results .small, h3.provider-results .small, h3.user-results .small, h3.doi-results .small, h3.work-results .small, h3.client-results .small, h3.client-prefix-results .small, h3.prefix-results .small, h3.provider-prefix-results .small, h3.repository-results .small {
   font-size: 18px;
