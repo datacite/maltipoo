@@ -23,12 +23,4 @@ jobs:
     - name: Build project
       run: yarn build
 
-    - name: Commit and push changes
-      run: |
-        git config --global user.name "${{ github.actor }}"
-        git config --global user.email "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
-        git add dist
-        git commit --amend -m "${{ github.event.head_commit.message }} [skip ci]"
-        git push origin HEAD:${{ github.event.pull_request.head.ref }} --force
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - uses: stefanzweifel/git-auto-commit-action@v5
