@@ -2,6 +2,10 @@
 
 Sass files for DataCite services, built on top of [Bootstrap](https://getbootstrap.com/).
 
+## Importing
+Import into a JavaScript project using yarn to add directly from the GitHub repo. Specify the version in the command.<br><br>
+example: `yarn add https://github.com/datacite/maltipoo#0.0.1`
+
 ## Local development
 
 Note: Node 22+  required
