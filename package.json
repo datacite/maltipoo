@@ -1,12 +1,12 @@
 {
   "name": "maltipoo",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Base stylesheet for DataCite",
   "scripts": {
-    "clean": "rimraf assets",
-    "build": "yarn clean && yarn sass src/stylesheets/doi.scss assets/stylesheets/doi.css && postcss assets/stylesheets/doi.css -o assets/stylesheets/doi.min.css"
+    "clean": "rimraf dist",
+    "build": "yarn clean && yarn sass src/stylesheets/doi.scss dist/stylesheets/doi.css && postcss dist/stylesheets/doi.css -o dist/stylesheets/doi.min.css"
   },
-  "main": "assets/stylesheets/doi.min.css",
+  "main": "dist/stylesheets/doi.min.css",
   "repository": "https://github.com/datacite/maltipoo",
   "license": "MIT",
   "devDependencies": {
