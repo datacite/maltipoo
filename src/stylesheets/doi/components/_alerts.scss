@@ -39,19 +39,19 @@ category: Components
     }
 }
 
-.text-primary, .text-findable, .panel-footer .text-findable {
+.text-primary, .text-findable, .card-footer .text-findable {
     color: $primary-color;
 }
-.text-default, .text-inactive, .panel-footer .text-inactive {
+.text-default, .text-inactive, .card-footer .text-inactive {
     color: $default-color;
 }
-.text-info, .text-registered, .panel-footer .text-registered {
+.text-info, .text-registered, .card-footer .text-registered {
     color: $info-color;
 }
 .text-success {
     color: $success-color;
 }
-.text-warning, .text-draft, .panel-footer .text-draft {
+.text-warning, .text-draft, .card-footer .text-draft {
     color: $warning-color;
 }
 .text-danger {
@@ -97,7 +97,7 @@ category: Components
   padding: 0 0 0 10px;
 }
 
-.required-nested-label label.control-label.col-md-3:before {
+.required-nested-label label.col-form-label.md-3:before {
     color: #e74c3c;
     content: "* ";
 }
@@ -107,7 +107,7 @@ category: Components
     content: "* ";
 }
 
-.required-nested-label .form-group.has-success label:before, .required-nested-label.form-group.has-success label:before {
+.required-nested-label .form-control.has-success label:before, .required-nested-label.form-control.has-success label:before {
     content: "* ";
     color: $success-color;
   }

@@ -1,6 +1,6 @@
 {
   "name": "maltipoo",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Base stylesheet for DataCite",
   "scripts": {
     "clean": "rimraf dist",
@@ -10,6 +10,7 @@
   "repository": "https://github.com/datacite/maltipoo",
   "license": "MIT",
   "devDependencies": {
+    "bootstrap": "4",
     "bootstrap-sass": "^3.4.3",
     "cssnano": "^7.0.1",
     "postcss": "^8.4.38",

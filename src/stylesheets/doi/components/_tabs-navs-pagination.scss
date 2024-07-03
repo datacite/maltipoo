@@ -43,7 +43,7 @@
     border-bottom: 1px solid $light-gray;
     margin-bottom: 30px;
 
-    .nav > li > a{
+    .nav > li > a, .nav-link {
         padding-bottom: 20px;
     }
 }
@@ -126,7 +126,7 @@
         background-color: $default-color;
         color: #FFFFFF;
     }
-    > li.active .badge {
+    > li.active .badge-pill {
       color: white;
       background-color: $default-color;
       border: 1px solid white;
@@ -139,7 +139,7 @@
         border-radius: 0 30px 30px 0;
     }
 
-    .badge {
+    .badge-pill {
       color: $default-color;
       font-size: 14px;
       font-weight: normal;
@@ -154,7 +154,9 @@
 .pagination > li:first-child > a,
 .pagination > li:first-child > span,
 .pagination > li:last-child > a,
-.pagination > li:last-child > span{
+.pagination > li:last-child > span,
+.page-item,
+.page-link {
     background-color: transparent;
     border: 2px solid $gray;
     border-radius: 20px;
@@ -172,7 +174,9 @@
 .pagination > li.active > a:hover,
 .pagination > li.active > span:hover,
 .pagination > li.active > a:focus,
-.pagination > li.active > span:focus {
+.pagination > li.active > span:focus,
+.page-item,
+.page-link {
     background-color: $carrot;
     border-color: $carrot;
     color: $white-color;
@@ -184,7 +188,9 @@
 .pagination-primary > li:first-child > a,
 .pagination-primary > li:first-child > span,
 .pagination-primary > li:last-child > a,
-.pagination-primary > li:last-child > span{
+.pagination-primary > li:last-child > span,
+.page-item,
+.page-link {
     border: 2px solid $gray;
     color: $gray;
 }
@@ -200,7 +206,9 @@
 .pagination-primary > li.active > a:hover,
 .pagination-primary > li.active > span:hover,
 .pagination-primary > li.active > a:focus,
-.pagination-primary > li.active > span:focus{
+.pagination-primary > li.active > span:focus,
+.page-item,
+.page-link {
    background-color: $carrot;
    border-color: $carrot;
    color: $white-color;
@@ -212,7 +220,9 @@
 .pagination-info > li:first-child > a,
 .pagination-info > li:first-child > span,
 .pagination-info > li:last-child > a,
-.pagination-info > li:last-child > span{
+.pagination-info > li:last-child > span,
+.page-item,
+.page-link {
     border: 2px solid $info-color;
     color: $info-color;
 }
@@ -228,7 +238,9 @@
 .pagination-info > li.active > a:hover,
 .pagination-info > li.active > span:hover,
 .pagination-info > li.active > a:focus,
-.pagination-info > li.active > span:focus{
+.pagination-info > li.active > span:focus,
+.page-item,
+.page-link {
    background-color: $carrot;
    border-color: $carrot;
    color: $white-color;
@@ -240,7 +252,9 @@
 .pagination-success > li:first-child > a,
 .pagination-success > li:first-child > span,
 .pagination-success > li:last-child > a,
-.pagination-success > li:last-child > span{
+.pagination-success > li:last-child > span,
+.page-item,
+.page-link {
     border: 2px solid $success-color;
     color: $success-color;
 }
@@ -256,7 +270,9 @@
 .pagination-success > li.active > a:hover,
 .pagination-success > li.active > span:hover,
 .pagination-success > li.active > a:focus,
-.pagination-success > li.active > span:focus{
+.pagination-success > li.active > span:focus,
+.page-item,
+.page-link {
    background-color: $carrot;
    border-color: $carrot;
    color: $white-color;
@@ -268,7 +284,9 @@
 .pagination-warning > li:first-child > a,
 .pagination-warning > li:first-child > span,
 .pagination-warning > li:last-child > a,
-.pagination-warning > li:last-child > span{
+.pagination-warning > li:last-child > span,
+.page-item,
+.page-link {
     border: 2px solid $warning-color;
     color: $warning-color;
 }
@@ -284,7 +302,9 @@
 .pagination-warning > li.active > a:hover,
 .pagination-warning > li.active > span:hover,
 .pagination-warning > li.active > a:focus,
-.pagination-warning > li.active > span:focus{
+.pagination-warning > li.active > span:focus,
+.page-item,
+.page-link {
    background-color: $warning-color;
    border-color: $warning-color;
    color: $white-color;
@@ -296,7 +316,9 @@
 .pagination-danger > li:first-child > a,
 .pagination-danger > li:first-child > span,
 .pagination-danger > li:last-child > a,
-.pagination-danger > li:last-child > span{
+.pagination-danger > li:last-child > span,
+.page-item,
+.page-link {
     border: 2px solid $danger-color;
     color: $danger-color;
 }
@@ -312,7 +334,9 @@
 .pagination-danger > li.active > a:hover,
 .pagination-danger > li.active > span:hover,
 .pagination-danger > li.active > a:focus,
-.pagination-danger > li.active > span:focus{
+.pagination-danger > li.active > span:focus,
+.page-item,
+.page-link {
    background-color: $danger-color;
    border-color: $danger-color;
    color: $white-color;

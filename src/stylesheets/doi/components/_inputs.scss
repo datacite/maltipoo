@@ -80,23 +80,23 @@
     }
 }
 
-.input-lg{
+.form-control-lg{
     height: 55px;
     padding: $padding-large-vertical $padding-large-horizontal;
 }
 
 .has-error{
-    .form-control-feedback, .control-label{
+    .form-control-feedback, .col-form-label{
         color: $danger-color;
     }
 }
 .has-success{
-    .form-control-feedback, .control-label{
+    .form-control-feedback, .col-form-label{
         color: $success-color;
     }
 }
 .has-warning{
-    .form-control-feedback, .control-label{
+    .form-control-feedback, .col-form-label{
         color: $warning-color;
     }
 }
@@ -132,7 +132,7 @@
     border-width: $border-thin;
     padding: $padding-round-vertical $padding-base-horizontal;
 }
-.input-group-btn .btn-default:not(.btn-fill){
+.input-group-btn .btn-secondary:not(.btn-fill){
     border-color: $medium-gray;
 }
 
@@ -148,12 +148,12 @@ textarea.form-control {
   }
 }
 
-.label-small {
+.badge-small {
   font-size: 16px;
   margin-bottom: 5px;
 }
 
-.label-vertical {
+.badge-vertical {
   color: $darker-gray;
   padding-top: 7px;
   margin-bottom: 7px;
@@ -187,7 +187,7 @@ textarea.form-control {
   }
 }
 
-.radio-fragment {
+.form-check-fragment {
   padding-bottom: 20px;
 
   .subtitle {
@@ -206,13 +206,13 @@ textarea.form-control {
 }
 
 .input-fragment {
-  .col-md-9.col-md-offset-3 {
+  .md-9.offset-md-3 {
     margin-left: 0 !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
     width: 100%;
   }
-  .form-group {
+  .form-control {
     margin-bottom: -8px;
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -222,7 +222,7 @@ textarea.form-control {
 .power-select-fragment {
   margin: 0 15px !important;
 
-  .col-md-9.col-md-offset-3 {
+  .md-9.offset-md-3 {
     margin-left: 0 !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -230,7 +230,7 @@ textarea.form-control {
   }
 }
 
-.col-md-9 {
+.md-9 {
   label.subtitle {
     font-size: $font-size-small;
     margin-bottom: 5px;
@@ -335,8 +335,8 @@ textarea.form-control {
       text-decoration: none;
     }
   }
-  .form-group {
-    &.has-feedback .control-label {
+  .form-control {
+    &.has-feedback .col-form-label {
       left: -120px;
     }
 
@@ -377,7 +377,7 @@ textarea.form-control {
     }
   }
 
-  .help-block {
+  .form-text {
     margin-left: -88px;
     margin-top: 44px;
   }
@@ -450,37 +450,37 @@ textarea.form-control {
   }
 }
 
-.form-group {
+.form-control {
   abbr { border: none; }
-  .help-block { font-size: $font-size-small; }
-  .help-block-fragment { display: block !important; }
+  .form-text { font-size: $font-size-small; }
+  .form-text-fragment { display: block !important; }
 
   &.has-error, &.has-warning {
-    .help-block:last-child {
+    .form-text:last-child {
       display: none;
     }
   }
 }
-.form-group.has-error {
+.form-control.has-error {
   input, select { color: $danger-color; border-color: $danger-color; }
-  .help-block { color: $danger-color; }
+  .form-text { color: $danger-color; }
 
   input.no-error, textarea.no-error, select.no-error { color: $wet-asphalt; border-color: $medium-gray; }
-  .help-block.no-error { color: $darker-gray; }
+  .form-text.no-error { color: $darker-gray; }
 }
-.form-group.has-warning {
+.form-control.has-warning {
   input, select { color: $warning-color; border-color: $warning-color; }
-  .help-block { color: $warning-color; }
+  .form-text { color: $warning-color; }
 
   input.no-error, textarea.no-error, select.no-error { color: $wet-asphalt; border-color: $medium-gray; }
-  .help-block.no-error { color: $darker-gray; }
+  .form-text.no-error { color: $darker-gray; }
 }
-.form-group.has-success {
+.form-control.has-success {
   input, select { color: $success-color; border-color: $success-color; }
-  .help-block { color: $success-color; }
+  .form-text { color: $success-color; }
 
   input.no-success, textarea.no-success, select.no-success { color: $wet-asphalt; border-color: $medium-gray; }
-  .help-block.no-success { color: $darker-gray; }
+  .form-text.no-success { color: $darker-gray; }
 }
 
 #search-repository {
@@ -499,7 +499,7 @@ form .logo img {
 }
 #password .input-group-btn { height: 40px; }
 
-.multi-part-form, .form-group {
+.multi-part-form, .form-control {
   margin-bottom: 1.5em;
 
   .form-control {
@@ -517,7 +517,7 @@ h3.metadata-form {
   .small { font-size: $font-size-base; }
 }
 
-label.control-label.col-md-2 {
+label.col-form-label.md-2 {
   font-weight: $font-weight-normal;
 }
 

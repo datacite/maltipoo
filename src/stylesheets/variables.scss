@@ -1,0 +1,11 @@
+// Fixing variables from bootstrap-sass
+// https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
+
+$_font-size-base:          14px !default;
+$_line-height-base:        1.428571429 !default;
+$line-height-computed:    floor(($_font-size-base * $_line-height-base)) !default;
+
+
+$_gray-base:              #000 !default;
+$gray-lighter:           lighten($_gray-base, 93.5%) !default;
+$gray-darker:            lighten($_gray-base, 13.5%) !default;

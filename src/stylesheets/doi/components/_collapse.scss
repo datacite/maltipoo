@@ -1,7 +1,7 @@
-.panel-group .panel{
+.panel-group .card {
     border-radius: 0;
 }
-.panel-title, h4.panel-title {
+.card-title, h4.card-title {
     font-size: $font-size-h4;
     font-weight: normal;
 }
@@ -11,10 +11,10 @@
     visibility: visible;
     overflow: hidden;
 }
-.panel-title a:hover, .panel-title a:focus{
+.card-title a:hover, .card-title a:focus{
     color: $turquoise;
     text-decoration: none;
 }
-.panel-default > .panel-heading + .panel-collapse.gsdk-collapse > .panel-body {
+.panel-default > .card-header + .panel-collapse.gsdk-collapse > .card-body {
     box-shadow: inset 0 7px 10px -7px rgba(0,0,0,0.14);
 }

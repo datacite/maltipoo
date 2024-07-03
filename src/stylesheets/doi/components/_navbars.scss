@@ -111,7 +111,7 @@ For navigation within a page we use pills.
             color: $white-color;
             @include opacity(1);
         }
-        .nav > li > a.btn:hover{
+        .nav > li > a.btn:hover, .nav-link:hover {
             background-color: transparent;
         }
 
@@ -131,21 +131,21 @@ For navigation within a page we use pills.
         }
     }
 
-    .btn-default{
+    .btn-secondary{
         color: $white-color !important;
         border-color: $white-color !important;
         @include opacity(.9);
     }
-    .btn-default.btn-fill{
+    .btn-secondary.btn-fill{
         color: $dark-gray;
         background-color: $white-color;
         @include opacity(.9);
     }
-    .btn-default.btn-fill:hover,
-    .btn-default.btn-fill:focus,
-    .btn-default.btn-fill:active,
-    .btn-default.btn-fill.active,
-    .open .dropdown-toggle.btn-fill.btn-default{
+    .btn-secondary.btn-fill:hover,
+    .btn-secondary.btn-fill:focus,
+    .btn-secondary.btn-fill:active,
+    .btn-secondary.btn-fill.active,
+    .open .dropdown-toggle.btn-fill.btn-secondary{
         border-color: $white-color;
         @include opacity(1);
     }
@@ -157,7 +157,7 @@ For navigation within a page we use pills.
     border-top-color: $white-color;
 }
 
-.navbar-default {
+.navbar-light {
     background-color: $white-bg;
 
     .navbar-brand{
@@ -193,13 +193,13 @@ For navigation within a page we use pills.
             color: $info-color;
         }
 
-        .navbar-toggle:hover,.navbar-toggle:focus {
+        .navbar-toggler:hover,.navbar-toggler:focus {
             background-color: transparent;
         }
 
     }
 
-    &:not(.navbar-transparent) .btn-default:hover{
+    &:not(.navbar-transparent) .btn-secondary:hover{
         color: $info-color;
         border-color: $info-color;
     }
@@ -248,13 +248,13 @@ For navigation within a page we use pills.
             color: $info-color;
         }
 
-        .navbar-toggle:hover,.navbar-toggle:focus {
+        .navbar-toggler:hover,.navbar-toggler:focus {
             background-color: transparent;
         }
 
     }
 
-    &:not(.navbar-transparent) .btn-default:hover{
+    &:not(.navbar-transparent) .btn-secondary:hover{
         color: $info-color;
         border-color: $info-color;
     }
@@ -289,7 +289,7 @@ For navigation within a page we use pills.
     }
 }
 
-.navbar-form{
+.form-inline {
    @include box-shadow(none);
    .form-control{
         @include light-form();
@@ -329,7 +329,7 @@ For navigation within a page we use pills.
     border-bottom: 1px solid transparent;
 }
 
-.navbar-toggle{
+.navbar-toggler{
     margin-top: 19px;
     margin-bottom: 19px;
     border: $none;
@@ -338,12 +338,12 @@ For navigation within a page we use pills.
         background-color: $white-color;
     }
      .navbar-collapse,
-     .navbar-form {
+     .form-inline {
         border-color: transparent;
     }
 
-    &.navbar-default .navbar-toggle:hover,
-    &.navbar-default .navbar-toggle:focus {
+    &.navbar-light .navbar-toggler:hover,
+    &.navbar-light .navbar-toggler:focus {
         background-color: transparent;
     }
 }

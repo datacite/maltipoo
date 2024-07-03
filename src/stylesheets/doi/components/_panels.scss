@@ -80,7 +80,7 @@ category: Components
 //   }
 // }
 
-.panel {
+.card {
     border: 1px solid $light-gray;
     border-radius: $border-radius-base;
     box-shadow: none;
@@ -104,7 +104,7 @@ category: Components
   border: 0;
   margin-bottom: 5px;
 
-  .panel-title {
+  .card-title {
     font-size: 25px;
     font-weight: bold;
     color: $turquoise;
@@ -119,7 +119,7 @@ category: Components
       line-height: $line-height-base;
     }
   }
-  .panel-title.work {
+  .card-title.work {
     h2 {
       color: $turquoise;
       font-weight: bold;
@@ -131,13 +131,13 @@ category: Components
     padding: 5px 0 0 0;
   }
 
-  .panel-body {
+  .card-body {
     border: 0;
     padding: 5px 10px 5px 10px;
     margin-bottom: 0;
   }
 
-  .panel-footer {
+  .card-footer {
     color: $darker-gray;
     padding-top: 0;
     padding-left: 10px;
@@ -158,18 +158,18 @@ category: Components
   }
 }
 
-.panel-default > .panel-heading {
+.panel-default > .card-header {
     background-color: $lighter-gray;
 }
 
-.panel-footer {
+.card-footer {
   border-top: 0;
 }
 
 .panel-list {
   padding-bottom: .75em;
 
-  .panel {
+  .card {
     margin-bottom: .5em;
   }
 }
@@ -184,7 +184,7 @@ category: Components
   }
 }
 
-.panel-heading {
+.card-header {
   small, .small { font-weight: normal; font-size: $font-size-base; line-height: $line-height-base; }
   .accordion-toggle {
     color: $darker-gray;
@@ -202,7 +202,7 @@ h3.member {
   }
 }
 
-.panel-body {
+.card-body {
   h3, h4 { margin-bottom: 10px; font-weight: bold; }
   h5 { margin-bottom: 0; font-weight: bold; }
   h3:first-child, h4:first-child, h5:first-child { margin-top: 0; }
@@ -256,7 +256,7 @@ h3.member {
   }
 }
 
-.panel-footer {
+.card-footer {
   margin-top: 3px;
   line-height: 1.4em;
   background-color: $white-bg;
@@ -284,12 +284,12 @@ h3.member {
 
     i { font-size: $font-size-small; }
   }
-  .btn-xs {
+  .btn-sm {
     font-size: .75em;
     border: 1px solid black;
     background-color: $white-color;
   }
-  .badge {
+  .badge-pill {
     color: $darker-gray;
     font-weight: normal;
     font-size: 14px;
@@ -297,10 +297,10 @@ h3.member {
     border: 1px solid $darker-gray;
     margin: -3px 0 0 5px;
   }
-  .form-group {
+  .form-control {
     margin-bottom: 0;
   }
-  .form-group.submit {
+  .form-control.submit {
     padding: .5em;
   }
   .title {
@@ -314,7 +314,7 @@ h3.member {
     }
   }
 }
-.panel-footer.item-links {
+.card-footer.item-links {
   margin-top: .25em;
   line-height: 1.4em;
 
@@ -335,7 +335,7 @@ h3.member {
   span a {
     margin-right: .2em;
   }
-  .btn-xs {
+  .btn-sm {
     font-size: .75em;
     border: 1px solid black;
     background-color: $white-color;
@@ -468,7 +468,7 @@ h3.member {
   border: 0 !important;
   box-shadow: none !important;
 
-  .panel-body {
+  .card-body {
     background-color: $lighter-gray;
   }
 

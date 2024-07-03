@@ -12,7 +12,7 @@ h3.member-results, h3.provider-results, h3.user-results, h3.doi-results, h3.work
   .small { font-size: $font-size-base; }
 }
 h3.repository-results { margin: 0 0 .35em 0; }
-.col-md-9#content-work, .col-md-9#content-contributor, .col-md-9#content-data-center, #content-data-center, #content-member, #content-user {
+.md-9#content-work, .md-9#content-contributor, .md-9#content-data-center, #content-data-center, #content-member, #content-user {
   padding-bottom: 1em;
 }
 .img-big {
@@ -26,11 +26,11 @@ h3.repository-results { margin: 0 0 .35em 0; }
 .panel-list .form-horizontal {
   margin-bottom: 30px;
 
-  .help-block {
+  .form-text {
     margin-left: 12px;
   }
 
-  .help-block.search-form {
+  .form-text.search-form {
     margin-left: 0;
     font-size: $font-size-small;
   }
