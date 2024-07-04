@@ -2,9 +2,8 @@
 
 /*             Navigation Tabs                 */
 .nav-tabs-member {
-  .nav-tabs {
     padding-bottom: 0;
-    border-bottom: 1px solid $light-gray;
+    border-bottom: 1px solid $light-gray !important;
     margin-bottom: 3em;
     margin-left: -10px;
 
@@ -28,10 +27,9 @@
       color: $medium-gray;
       font-weight: bold;
     }
-    a:focus, > li > a:focus, .active > a, .active > a:focus {
-      color: $turquoise;
+    a:focus, > li > a:focus, .active > a, .active > a:focus, a.active {
+      color: $turquoise !important;
     }
-  }
 }
 
 .nav-tabs:first-child {
@@ -69,39 +67,36 @@
             }
         }
 
-        > li.active{
+        li.active, a.active {
             color: $font-color;
             position: relative;
 
-            > a,
-            > a:hover,
-            > a:focus{
-                background-color: transparent;
-                border: 0 none;
-                //height: 50px;
-            }
+            background-color: transparent;
+            border: 0 none;
+            border-bottom: 1px solid $light-gray !important;
+            //height: 50px;
+        }
 
-            :after{
-                border-bottom: 11px solid $white-color;
-                border-left: 11px solid rgba(0, 0, 0, 0);
-                border-right: 11px solid rgba(0, 0, 0, 0);
-                content: "";
-                display: inline-block;
-                position: absolute;
-                right: 40%;
-                bottom: -1px;
-            }
+        a.active:before{
+            border-bottom: 11px solid $light-gray;
+            border-left: 11px solid rgba(0, 0, 0, 0);
+            border-right: 11px solid rgba(0, 0, 0, 0);
+            content: "";
+            display: inline-block;
+            position: absolute;
+            right: 40%;
+            bottom: 0;
+        }
 
-            :before{
-                border-bottom: 11px solid $light-gray;
-                border-left: 11px solid rgba(0, 0, 0, 0);
-                border-right: 11px solid rgba(0, 0, 0, 0);
-                content: "";
-                display: inline-block;
-                position: absolute;
-                right: 40%;
-                bottom: 1px;
-            }
+        a.active:after{
+            border-bottom: 11px solid $white-color;
+            border-left: 11px solid rgba(0, 0, 0, 0);
+            border-right: 11px solid rgba(0, 0, 0, 0);
+            content: "";
+            display: inline-block;
+            position: absolute;
+            right: 40%;
+            bottom: -2px;
         }
 }
 

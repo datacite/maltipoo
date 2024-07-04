@@ -58,7 +58,7 @@ category: Components
     color: $danger-color;
 }
 
-.alert[bsstyle="info"] {
+.alert-info, .alert[bsstyle="info"] {
     background-color: $white_bg;
     color: $info-color;
     border: 2px solid $info-color;
