@@ -10443,12 +10443,12 @@ category: Components
   color: #e74c3c;
 }
 
-.alert[bsstyle=info] {
+.alert-info, .alert[bsstyle=info] {
   background-color: #FFFFFF;
   color: #3498db;
   border: 2px solid #3498db;
 }
-.alert[bsstyle=info] i {
+.alert-info i, .alert[bsstyle=info] i {
   color: #3498db;
 }
 
@@ -11957,32 +11957,32 @@ h3.member > a, h3.member > i, h3.member > .btn-icon {
 
 /*             Navigation menu                */
 /*             Navigation Tabs                 */
-.nav-tabs-member .nav-tabs {
+.nav-tabs-member {
   padding-bottom: 0;
-  border-bottom: 1px solid #e0e3e5;
+  border-bottom: 1px solid #e0e3e5 !important;
   margin-bottom: 3em;
   margin-left: -10px;
 }
-.nav-tabs-member .nav-tabs .nav-link {
+.nav-tabs-member .nav-link {
   padding-left: 0;
   margin-left: 10px;
 }
-.nav-tabs-member .nav-tabs .nav-link.active.doi {
+.nav-tabs-member .nav-link.active.doi {
   cursor: pointer;
 }
-.nav-tabs-member .nav-tabs a, .nav-tabs-member .nav-tabs a:focus, .nav-tabs-member .nav-tabs a:hover, .nav-tabs-member .nav-tabs .active {
+.nav-tabs-member a, .nav-tabs-member a:focus, .nav-tabs-member a:hover, .nav-tabs-member .active {
   font-size: 25px;
 }
-.nav-tabs-member .nav-tabs a {
+.nav-tabs-member a {
   color: #88939a;
   font-weight: bold;
 }
-.nav-tabs-member .nav-tabs a:hover, .nav-tabs-member .nav-tabs .active > a:hover {
+.nav-tabs-member a:hover, .nav-tabs-member .active > a:hover {
   color: #cdd2d5;
   font-weight: bold;
 }
-.nav-tabs-member .nav-tabs a:focus, .nav-tabs-member .nav-tabs > li > a:focus, .nav-tabs-member .nav-tabs .active > a, .nav-tabs-member .nav-tabs .active > a:focus {
-  color: #1abc9c;
+.nav-tabs-member a:focus, .nav-tabs-member > li > a:focus, .nav-tabs-member .active > a, .nav-tabs-member .active > a:focus, .nav-tabs-member a.active {
+  color: #1abc9c !important;
 }
 
 .nav-tabs:first-child {
@@ -12019,27 +12019,14 @@ h3.member > a, h3.member > i, h3.member > .btn-icon {
 .nav-tabs > li > a:hover {
   color: #34495e;
 }
-.nav-tabs > li.active {
+.nav-tabs li.active, .nav-tabs a.active {
   color: #34495e;
   position: relative;
-}
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
   background-color: transparent;
   border: 0 none;
+  border-bottom: 1px solid #e0e3e5 !important;
 }
-.nav-tabs > li.active :after {
-  border-bottom: 11px solid #FFFFFF;
-  border-left: 11px solid rgba(0, 0, 0, 0);
-  border-right: 11px solid rgba(0, 0, 0, 0);
-  content: "";
-  display: inline-block;
-  position: absolute;
-  right: 40%;
-  bottom: -1px;
-}
-.nav-tabs > li.active :before {
+.nav-tabs a.active:before {
   border-bottom: 11px solid #e0e3e5;
   border-left: 11px solid rgba(0, 0, 0, 0);
   border-right: 11px solid rgba(0, 0, 0, 0);
@@ -12047,7 +12034,17 @@ h3.member > a, h3.member > i, h3.member > .btn-icon {
   display: inline-block;
   position: absolute;
   right: 40%;
-  bottom: 1px;
+  bottom: 0;
+}
+.nav-tabs a.active:after {
+  border-bottom: 11px solid #FFFFFF;
+  border-left: 11px solid rgba(0, 0, 0, 0);
+  border-right: 11px solid rgba(0, 0, 0, 0);
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 40%;
+  bottom: -2px;
 }
 
 /*             Navigation Pills               */
@@ -12098,7 +12095,6 @@ h3.member > a, h3.member > i, h3.member > .btn-icon {
 .pagination > li:first-child > span,
 .pagination > li:last-child > a,
 .pagination > li:last-child > span,
-.page-item,
 .page-link {
   background-color: transparent;
   border: 2px solid #cdd2d5;
@@ -12119,7 +12115,6 @@ h3.member > a, h3.member > i, h3.member > .btn-icon {
 .pagination > li.active > span:hover,
 .pagination > li.active > a:focus,
 .pagination > li.active > span:focus,
-.page-item,
 .page-link {
   background-color: #e67e22;
   border-color: #e67e22;
@@ -12133,7 +12128,6 @@ h3.member > a, h3.member > i, h3.member > .btn-icon {
 .pagination-primary > li:first-child > span,
 .pagination-primary > li:last-child > a,
 .pagination-primary > li:last-child > span,
-.page-item,
 .page-link {
   border: 2px solid #cdd2d5;
   color: #cdd2d5;
@@ -12151,7 +12145,6 @@ h3.member > a, h3.member > i, h3.member > .btn-icon {
 .pagination-primary > li.active > span:hover,
 .pagination-primary > li.active > a:focus,
 .pagination-primary > li.active > span:focus,
-.page-item,
 .page-link {
   background-color: #e67e22;
   border-color: #e67e22;
@@ -12165,7 +12158,6 @@ h3.member > a, h3.member > i, h3.member > .btn-icon {
 .pagination-info > li:first-child > span,
 .pagination-info > li:last-child > a,
 .pagination-info > li:last-child > span,
-.page-item,
 .page-link {
   border: 2px solid #3498db;
   color: #3498db;
@@ -12183,7 +12175,6 @@ h3.member > a, h3.member > i, h3.member > .btn-icon {
 .pagination-info > li.active > span:hover,
 .pagination-info > li.active > a:focus,
 .pagination-info > li.active > span:focus,
-.page-item,
 .page-link {
   background-color: #e67e22;
   border-color: #e67e22;
@@ -12197,7 +12188,6 @@ h3.member > a, h3.member > i, h3.member > .btn-icon {
 .pagination-success > li:first-child > span,
 .pagination-success > li:last-child > a,
 .pagination-success > li:last-child > span,
-.page-item,
 .page-link {
   border: 2px solid #2ecc71;
   color: #2ecc71;
@@ -12215,7 +12205,6 @@ h3.member > a, h3.member > i, h3.member > .btn-icon {
 .pagination-success > li.active > span:hover,
 .pagination-success > li.active > a:focus,
 .pagination-success > li.active > span:focus,
-.page-item,
 .page-link {
   background-color: #e67e22;
   border-color: #e67e22;
@@ -12229,7 +12218,6 @@ h3.member > a, h3.member > i, h3.member > .btn-icon {
 .pagination-warning > li:first-child > span,
 .pagination-warning > li:last-child > a,
 .pagination-warning > li:last-child > span,
-.page-item,
 .page-link {
   border: 2px solid #e67e22;
   color: #e67e22;
@@ -12247,7 +12235,6 @@ h3.member > a, h3.member > i, h3.member > .btn-icon {
 .pagination-warning > li.active > span:hover,
 .pagination-warning > li.active > a:focus,
 .pagination-warning > li.active > span:focus,
-.page-item,
 .page-link {
   background-color: #e67e22;
   border-color: #e67e22;
@@ -12261,7 +12248,6 @@ h3.member > a, h3.member > i, h3.member > .btn-icon {
 .pagination-danger > li:first-child > span,
 .pagination-danger > li:last-child > a,
 .pagination-danger > li:last-child > span,
-.page-item,
 .page-link {
   border: 2px solid #e74c3c;
   color: #e74c3c;
@@ -12279,7 +12265,6 @@ h3.member > a, h3.member > i, h3.member > .btn-icon {
 .pagination-danger > li.active > span:hover,
 .pagination-danger > li.active > a:focus,
 .pagination-danger > li.active > span:focus,
-.page-item,
 .page-link {
   background-color: #e74c3c;
   border-color: #e74c3c;

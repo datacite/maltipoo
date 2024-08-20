@@ -150,7 +150,7 @@
 .pagination > li:first-child > span,
 .pagination > li:last-child > a,
 .pagination > li:last-child > span,
-.page-item,
+// .page-item,
 .page-link {
     background-color: transparent;
     border: 2px solid $gray;
@@ -170,7 +170,7 @@
 .pagination > li.active > span:hover,
 .pagination > li.active > a:focus,
 .pagination > li.active > span:focus,
-.page-item,
+// .page-item,
 .page-link {
     background-color: $carrot;
     border-color: $carrot;
@@ -184,7 +184,7 @@
 .pagination-primary > li:first-child > span,
 .pagination-primary > li:last-child > a,
 .pagination-primary > li:last-child > span,
-.page-item,
+// .page-item,
 .page-link {
     border: 2px solid $gray;
     color: $gray;
@@ -202,7 +202,7 @@
 .pagination-primary > li.active > span:hover,
 .pagination-primary > li.active > a:focus,
 .pagination-primary > li.active > span:focus,
-.page-item,
+// .page-item,
 .page-link {
    background-color: $carrot;
    border-color: $carrot;
@@ -216,7 +216,7 @@
 .pagination-info > li:first-child > span,
 .pagination-info > li:last-child > a,
 .pagination-info > li:last-child > span,
-.page-item,
+// .page-item,
 .page-link {
     border: 2px solid $info-color;
     color: $info-color;
@@ -234,7 +234,7 @@
 .pagination-info > li.active > span:hover,
 .pagination-info > li.active > a:focus,
 .pagination-info > li.active > span:focus,
-.page-item,
+// .page-item,
 .page-link {
    background-color: $carrot;
    border-color: $carrot;
@@ -248,7 +248,7 @@
 .pagination-success > li:first-child > span,
 .pagination-success > li:last-child > a,
 .pagination-success > li:last-child > span,
-.page-item,
+// .page-item,
 .page-link {
     border: 2px solid $success-color;
     color: $success-color;
@@ -266,7 +266,7 @@
 .pagination-success > li.active > span:hover,
 .pagination-success > li.active > a:focus,
 .pagination-success > li.active > span:focus,
-.page-item,
+// .page-item,
 .page-link {
    background-color: $carrot;
    border-color: $carrot;
@@ -280,7 +280,7 @@
 .pagination-warning > li:first-child > span,
 .pagination-warning > li:last-child > a,
 .pagination-warning > li:last-child > span,
-.page-item,
+// .page-item,
 .page-link {
     border: 2px solid $warning-color;
     color: $warning-color;
@@ -298,7 +298,7 @@
 .pagination-warning > li.active > span:hover,
 .pagination-warning > li.active > a:focus,
 .pagination-warning > li.active > span:focus,
-.page-item,
+// .page-item,
 .page-link {
    background-color: $warning-color;
    border-color: $warning-color;
@@ -312,7 +312,7 @@
 .pagination-danger > li:first-child > span,
 .pagination-danger > li:last-child > a,
 .pagination-danger > li:last-child > span,
-.page-item,
+// .page-item,
 .page-link {
     border: 2px solid $danger-color;
     color: $danger-color;
@@ -330,7 +330,7 @@
 .pagination-danger > li.active > span:hover,
 .pagination-danger > li.active > a:focus,
 .pagination-danger > li.active > span:focus,
-.page-item,
+// .page-item,
 .page-link {
    background-color: $danger-color;
    border-color: $danger-color;
