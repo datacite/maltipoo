@@ -2,9 +2,8 @@
 
 /*             Navigation Tabs                 */
 .nav-tabs-member {
-  .nav-tabs {
     padding-bottom: 0;
-    border-bottom: 1px solid $light-gray;
+    border-bottom: 1px solid $light-gray !important;
     margin-bottom: 3em;
     margin-left: -10px;
 
@@ -28,10 +27,9 @@
       color: $medium-gray;
       font-weight: bold;
     }
-    a:focus, > li > a:focus, .active > a, .active > a:focus {
-      color: $turquoise;
+    a:focus, > li > a:focus, .active > a, .active > a:focus, a.active {
+      color: $turquoise !important;
     }
-  }
 }
 
 .nav-tabs:first-child {
@@ -69,39 +67,36 @@
             }
         }
 
-        > li.active{
+        li.active, a.active {
             color: $font-color;
             position: relative;
 
-            > a,
-            > a:hover,
-            > a:focus{
-                background-color: transparent;
-                border: 0 none;
-                //height: 50px;
-            }
+            background-color: transparent;
+            border: 0 none;
+            border-bottom: 1px solid $light-gray !important;
+            //height: 50px;
+        }
 
-            :after{
-                border-bottom: 11px solid $white-color;
-                border-left: 11px solid rgba(0, 0, 0, 0);
-                border-right: 11px solid rgba(0, 0, 0, 0);
-                content: "";
-                display: inline-block;
-                position: absolute;
-                right: 40%;
-                bottom: -1px;
-            }
+        a.active:before{
+            border-bottom: 11px solid $light-gray;
+            border-left: 11px solid rgba(0, 0, 0, 0);
+            border-right: 11px solid rgba(0, 0, 0, 0);
+            content: "";
+            display: inline-block;
+            position: absolute;
+            right: 40%;
+            bottom: 0;
+        }
 
-            :before{
-                border-bottom: 11px solid $light-gray;
-                border-left: 11px solid rgba(0, 0, 0, 0);
-                border-right: 11px solid rgba(0, 0, 0, 0);
-                content: "";
-                display: inline-block;
-                position: absolute;
-                right: 40%;
-                bottom: 1px;
-            }
+        a.active:after{
+            border-bottom: 11px solid $white-color;
+            border-left: 11px solid rgba(0, 0, 0, 0);
+            border-right: 11px solid rgba(0, 0, 0, 0);
+            content: "";
+            display: inline-block;
+            position: absolute;
+            right: 40%;
+            bottom: -2px;
         }
 }
 
@@ -155,7 +150,7 @@
 .pagination > li:first-child > span,
 .pagination > li:last-child > a,
 .pagination > li:last-child > span,
-.page-item,
+// .page-item,
 .page-link {
     background-color: transparent;
     border: 2px solid $gray;
@@ -175,7 +170,7 @@
 .pagination > li.active > span:hover,
 .pagination > li.active > a:focus,
 .pagination > li.active > span:focus,
-.page-item,
+// .page-item,
 .page-link {
     background-color: $carrot;
     border-color: $carrot;
@@ -189,7 +184,7 @@
 .pagination-primary > li:first-child > span,
 .pagination-primary > li:last-child > a,
 .pagination-primary > li:last-child > span,
-.page-item,
+// .page-item,
 .page-link {
     border: 2px solid $gray;
     color: $gray;
@@ -207,7 +202,7 @@
 .pagination-primary > li.active > span:hover,
 .pagination-primary > li.active > a:focus,
 .pagination-primary > li.active > span:focus,
-.page-item,
+// .page-item,
 .page-link {
    background-color: $carrot;
    border-color: $carrot;
@@ -221,7 +216,7 @@
 .pagination-info > li:first-child > span,
 .pagination-info > li:last-child > a,
 .pagination-info > li:last-child > span,
-.page-item,
+// .page-item,
 .page-link {
     border: 2px solid $info-color;
     color: $info-color;
@@ -239,7 +234,7 @@
 .pagination-info > li.active > span:hover,
 .pagination-info > li.active > a:focus,
 .pagination-info > li.active > span:focus,
-.page-item,
+// .page-item,
 .page-link {
    background-color: $carrot;
    border-color: $carrot;
@@ -253,7 +248,7 @@
 .pagination-success > li:first-child > span,
 .pagination-success > li:last-child > a,
 .pagination-success > li:last-child > span,
-.page-item,
+// .page-item,
 .page-link {
     border: 2px solid $success-color;
     color: $success-color;
@@ -271,7 +266,7 @@
 .pagination-success > li.active > span:hover,
 .pagination-success > li.active > a:focus,
 .pagination-success > li.active > span:focus,
-.page-item,
+// .page-item,
 .page-link {
    background-color: $carrot;
    border-color: $carrot;
@@ -285,7 +280,7 @@
 .pagination-warning > li:first-child > span,
 .pagination-warning > li:last-child > a,
 .pagination-warning > li:last-child > span,
-.page-item,
+// .page-item,
 .page-link {
     border: 2px solid $warning-color;
     color: $warning-color;
@@ -303,7 +298,7 @@
 .pagination-warning > li.active > span:hover,
 .pagination-warning > li.active > a:focus,
 .pagination-warning > li.active > span:focus,
-.page-item,
+// .page-item,
 .page-link {
    background-color: $warning-color;
    border-color: $warning-color;
@@ -317,7 +312,7 @@
 .pagination-danger > li:first-child > span,
 .pagination-danger > li:last-child > a,
 .pagination-danger > li:last-child > span,
-.page-item,
+// .page-item,
 .page-link {
     border: 2px solid $danger-color;
     color: $danger-color;
@@ -335,7 +330,7 @@
 .pagination-danger > li.active > span:hover,
 .pagination-danger > li.active > a:focus,
 .pagination-danger > li.active > span:focus,
-.page-item,
+// .page-item,
 .page-link {
    background-color: $danger-color;
    border-color: $danger-color;
