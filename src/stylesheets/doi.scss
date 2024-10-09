@@ -99,4 +99,7 @@ Datacite - Bootstrap 5 theme
 @import "doi/pages/stats-portal";
 @import "doi/pages/metadata";
 @import "doi/pages/doi";
-@import "doi/pages/repository-finder"
+@import "doi/pages/repository-finder";
+
+// Styles to fix things broken during the upgrade process
+@import "doi/globals/styles";
