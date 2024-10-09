@@ -35,11 +35,11 @@
         border-right: 11px solid rgba(0, 0, 0, 0);
         top: -11px;
     }
-    &.left{
+    &.start {
         margin-left: -11px;
         padding: 0;
     }
-    &.left .tooltip-inner:after {
+    &.start .tooltip-inner:after {
         border-left: 11px solid $white-color;
         border-top: 11px solid rgba(0, 0, 0, 0);
         border-bottom: 11px solid rgba(0, 0, 0, 0);
@@ -47,7 +47,7 @@
         left: auto;
         margin-left: 0;
     }
-    &.left .tooltip-inner:before {
+    &.start .tooltip-inner:before {
         border-left: 11px solid rgba(0, 0, 0, 0.2);
         border-top: 11px solid rgba(0, 0, 0, 0);
         border-bottom: 11px solid rgba(0, 0, 0, 0);
@@ -55,11 +55,11 @@
         left: auto;
         margin-left: 0;
     }
-    &.right{
+    &.end {
         margin-left: 11px;
         padding: 0;
     }
-    &.right .tooltip-inner:after {
+    &.end .tooltip-inner:after {
         border-right: 11px solid $white-color;
         border-top: 11px solid rgba(0, 0, 0, 0);
         border-bottom: 11px solid rgba(0, 0, 0, 0);
@@ -67,7 +67,7 @@
         top: 10px;
         margin-left: 0;
     }
-    &.right .tooltip-inner:before {
+    &.end .tooltip-inner:before {
         border-right: 11px solid rgba(0, 0, 0, 0.2);
         border-top: 11px solid rgba(0, 0, 0, 0);
         border-bottom: 11px solid rgba(0, 0, 0, 0);
@@ -137,13 +137,13 @@
       color: $bg-danger;
     }
 }
-.popover .arrow{
+.popover .popover-arrow{
     border: 0;
 }
-.popover.top .arrow{
+.popover.top .popover-arrow{
     margin-left: 0;
 }
-.popover.bottom .arrow:after{
+.popover.bottom .popover-arrow:after{
     border-bottom-color: $darker-gray;
 }
 .popover-filter{
@@ -164,13 +164,13 @@
      @include opacity(0.2);
      transition-delay: 0s;
 }
-.popover.left > .arrow::after{
+.popover.start > .popover-arrow::after{
     border-left-color: $darker-gray;
     bottom: -20px;
 }
-.popover.top > .arrow::after{
+.popover.top > .popover-arrow::after{
     border-top-color: $darker-gray;
 }
-.popover.right > .arrow::after{
+.popover.end > .popover-arrow::after{
     border-right-color: $darker-gray;
 }

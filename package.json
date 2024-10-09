@@ -10,7 +10,7 @@
   "repository": "https://github.com/datacite/maltipoo",
   "license": "MIT",
   "devDependencies": {
-    "bootstrap": "4",
+    "bootstrap": "^5.3.3",
     "bootstrap-sass": "^3.4.3",
     "cssnano": "^7.0.1",
     "postcss": "^8.4.38",
