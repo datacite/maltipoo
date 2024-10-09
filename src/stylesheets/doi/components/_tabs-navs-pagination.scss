@@ -7,27 +7,32 @@
     margin-bottom: 3em;
     margin-left: -10px;
 
-    .nav-link {
+    .nav-item button {
       padding-left: 0;
       margin-left: 10px;
+      // margin-bottom: -2px;
+      border-left: none;
+      border-right: none;
+      border-top: none;
     }
 
     .nav-link.active.doi {
       cursor: pointer;
     }
 
-    a, a:focus, a:hover, .active {
+    button, button:focus, button:hover, .active {
       font-size: $font-size-h3;
     }
-    a {
+    button {
       color: $darker-gray;
       font-weight: bold;
     }
-    a:hover, .active > a:hover {
+    button:hover, .active > button:hover {
       color: $medium-gray;
       font-weight: bold;
     }
-    a:focus, > li > a:focus, .active > a, .active > a:focus, a.active {
+
+    button:focus, > li > button:focus, .active > button, .active > button:focus, button.active {
       color: $turquoise !important;
     }
 }
@@ -41,7 +46,7 @@
     border-bottom: 1px solid $light-gray;
     margin-bottom: 30px;
 
-    .nav > li > a, .nav-link {
+    .nav > li > button, .nav-link {
         padding-bottom: 20px;
     }
 }
@@ -58,16 +63,16 @@
         font-size: $font-size-base;
         font-weight: $font-weight-bold;
         > li{
-            > a{
+            > button{
                 border: 0 none;
                 color: $other-medium-gray;
             }
-            > a:hover{
+            > button:hover{
                 color: $font-color;
             }
         }
 
-        li.active, a.active {
+        li.active, button.active {
             color: $font-color;
             position: relative;
 
@@ -77,7 +82,7 @@
             //height: 50px;
         }
 
-        a.active:before{
+        button.active:before{
             border-bottom: 11px solid $light-gray;
             border-left: 11px solid rgba(0, 0, 0, 0);
             border-right: 11px solid rgba(0, 0, 0, 0);
@@ -88,7 +93,7 @@
             bottom: 0;
         }
 
-        a.active:after{
+        button.active:after{
             border-bottom: 11px solid $white-color;
             border-left: 11px solid rgba(0, 0, 0, 0);
             border-right: 11px solid rgba(0, 0, 0, 0);
@@ -106,7 +111,7 @@
     > li + li {
         margin-left: 0;
     }
-    > li > a {
+    > li > button {
         border: 2px solid $default-color;
         border-radius: 0;
         color: $default-color;
@@ -115,9 +120,9 @@
         padding: 5px 20px;
 
     }
-    > li.active > a,
-    > li.active > a:hover,
-    > li.active > a:focus {
+    > li.active > button,
+    > li.active > button:hover,
+    > li.active > button:focus {
         background-color: $default-color;
         color: #FFFFFF;
     }
@@ -126,11 +131,11 @@
       background-color: $default-color;
       border: 1px solid white;
     }
-    > li:first-child > a{
+    > li:first-child > button{
         border-radius: 30px 0 0 30px;
         margin: 0;
     }
-    > li:last-child > a{
+    > li:last-child > button{
         border-radius: 0 30px 30px 0;
     }
 
@@ -144,11 +149,11 @@
     }
 }
 
-.pagination > li > a,
+.pagination > li > button,
 .pagination > li > span,
-.pagination > li:first-child > a,
+.pagination > li:first-child > button,
 .pagination > li:first-child > span,
-.pagination > li:last-child > a,
+.pagination > li:last-child > button,
 .pagination > li:last-child > span,
 // .page-item,
 .page-link {
@@ -161,14 +166,14 @@
     min-width: 36px;
     padding: 3px 12px;
 }
-.pagination > li > a:hover,
-.pagination > li > a:focus,
-.pagination > li > a:active,
-.pagination > li.active > a,
+.pagination > li > button:hover,
+.pagination > li > button:focus,
+.pagination > li > button:active,
+.pagination > li.active > button,
 .pagination > li.active > span,
-.pagination > li.active > a:hover,
+.pagination > li.active > button:hover,
 .pagination > li.active > span:hover,
-.pagination > li.active > a:focus,
+.pagination > li.active > button:focus,
 .pagination > li.active > span:focus,
 // .page-item,
 .page-link {
@@ -177,12 +182,12 @@
     color: $white-color;
 }
 
-.nav-pills-primary > li > a,
-.pagination-primary > li > a,
+.nav-pills-primary > li > button,
+.pagination-primary > li > button,
 .pagination-primary > li > span,
-.pagination-primary > li:first-child > a,
+.pagination-primary > li:first-child > button,
 .pagination-primary > li:first-child > span,
-.pagination-primary > li:last-child > a,
+.pagination-primary > li:last-child > button,
 .pagination-primary > li:last-child > span,
 // .page-item,
 .page-link {
@@ -190,17 +195,17 @@
     color: $gray;
 }
 
-.nav-pills-primary > li.active > a,
-.nav-pills-primary > li.active > a:hover,
-.nav-pills-primary > li.active > a:focus,
-.pagination-primary > li > a:hover,
-.pagination-primary > li > a:focus,
-.pagination-primary > li > a:active,
-.pagination-primary > li.active > a,
+.nav-pills-primary > li.active > button,
+.nav-pills-primary > li.active > button:hover,
+.nav-pills-primary > li.active > button:focus,
+.pagination-primary > li > button:hover,
+.pagination-primary > li > button:focus,
+.pagination-primary > li > button:active,
+.pagination-primary > li.active > button,
 .pagination-primary > li.active > span,
-.pagination-primary > li.active > a:hover,
+.pagination-primary > li.active > button:hover,
 .pagination-primary > li.active > span:hover,
-.pagination-primary > li.active > a:focus,
+.pagination-primary > li.active > button:focus,
 .pagination-primary > li.active > span:focus,
 // .page-item,
 .page-link {
@@ -209,12 +214,12 @@
    color: $white-color;
 }
 
-.nav-pills-info > li > a,
-.pagination-info > li > a,
+.nav-pills-info > li > button,
+.pagination-info > li > button,
 .pagination-info > li > span,
-.pagination-info > li:first-child > a,
+.pagination-info > li:first-child > button,
 .pagination-info > li:first-child > span,
-.pagination-info > li:last-child > a,
+.pagination-info > li:last-child > button,
 .pagination-info > li:last-child > span,
 // .page-item,
 .page-link {
@@ -222,17 +227,17 @@
     color: $info-color;
 }
 
-.nav-pills-info > li.active > a,
-.nav-pills-info > li.active > a:hover,
-.nav-pills-info > li.active > a:focus,
-.pagination-info > li > a:hover,
-.pagination-info > li > a:focus,
-.pagination-info > li > a:active,
-.pagination-info > li.active > a,
+.nav-pills-info > li.active > button,
+.nav-pills-info > li.active > button:hover,
+.nav-pills-info > li.active > button:focus,
+.pagination-info > li > button:hover,
+.pagination-info > li > button:focus,
+.pagination-info > li > button:active,
+.pagination-info > li.active > button,
 .pagination-info > li.active > span,
-.pagination-info > li.active > a:hover,
+.pagination-info > li.active > button:hover,
 .pagination-info > li.active > span:hover,
-.pagination-info > li.active > a:focus,
+.pagination-info > li.active > button:focus,
 .pagination-info > li.active > span:focus,
 // .page-item,
 .page-link {
@@ -241,12 +246,12 @@
    color: $white-color;
 }
 
-.nav-pills-success > li > a,
-.pagination-success > li > a,
+.nav-pills-success > li > button,
+.pagination-success > li > button,
 .pagination-success > li > span,
-.pagination-success > li:first-child > a,
+.pagination-success > li:first-child > button,
 .pagination-success > li:first-child > span,
-.pagination-success > li:last-child > a,
+.pagination-success > li:last-child > button,
 .pagination-success > li:last-child > span,
 // .page-item,
 .page-link {
@@ -254,17 +259,17 @@
     color: $success-color;
 }
 
-.nav-pills-success > li.active > a,
-.nav-pills-success > li.active > a:hover,
-.nav-pills-success > li.active > a:focus,
-.pagination-success > li > a:hover,
-.pagination-success > li > a:focus,
-.pagination-success > li > a:active,
-.pagination-success > li.active > a,
+.nav-pills-success > li.active > button,
+.nav-pills-success > li.active > button:hover,
+.nav-pills-success > li.active > button:focus,
+.pagination-success > li > button:hover,
+.pagination-success > li > button:focus,
+.pagination-success > li > button:active,
+.pagination-success > li.active > button,
 .pagination-success > li.active > span,
-.pagination-success > li.active > a:hover,
+.pagination-success > li.active > button:hover,
 .pagination-success > li.active > span:hover,
-.pagination-success > li.active > a:focus,
+.pagination-success > li.active > button:focus,
 .pagination-success > li.active > span:focus,
 // .page-item,
 .page-link {
