@@ -152,9 +152,7 @@
 .pagination > li:first-child > button,
 .pagination > li:first-child > span,
 .pagination > li:last-child > button,
-.pagination > li:last-child > span,
-// .page-item,
-.page-link {
+.pagination > li:last-child > span {
     background-color: transparent;
     border: 2px solid $gray;
     border-radius: 20px;
@@ -172,9 +170,7 @@
 .pagination > li.active > button:hover,
 .pagination > li.active > span:hover,
 .pagination > li.active > button:focus,
-.pagination > li.active > span:focus,
-// .page-item,
-.page-link {
+.pagination > li.active > span:focus {
     background-color: $carrot;
     border-color: $carrot;
     color: $white-color;
@@ -186,9 +182,7 @@
 .pagination-primary > li:first-child > button,
 .pagination-primary > li:first-child > span,
 .pagination-primary > li:last-child > button,
-.pagination-primary > li:last-child > span,
-// .page-item,
-.page-link {
+.pagination-primary > li:last-child > span {
     border: 2px solid $gray;
     color: $gray;
 }
@@ -204,9 +198,7 @@
 .pagination-primary > li.active > button:hover,
 .pagination-primary > li.active > span:hover,
 .pagination-primary > li.active > button:focus,
-.pagination-primary > li.active > span:focus,
-// .page-item,
-.page-link {
+.pagination-primary > li.active > span:focus {
    background-color: $carrot;
    border-color: $carrot;
    color: $white-color;
@@ -218,9 +210,7 @@
 .pagination-info > li:first-child > button,
 .pagination-info > li:first-child > span,
 .pagination-info > li:last-child > button,
-.pagination-info > li:last-child > span,
-// .page-item,
-.page-link {
+.pagination-info > li:last-child > span {
     border: 2px solid $info-color;
     color: $info-color;
 }
@@ -236,9 +226,7 @@
 .pagination-info > li.active > button:hover,
 .pagination-info > li.active > span:hover,
 .pagination-info > li.active > button:focus,
-.pagination-info > li.active > span:focus,
-// .page-item,
-.page-link {
+.pagination-info > li.active > span:focus {
    background-color: $carrot;
    border-color: $carrot;
    color: $white-color;
@@ -250,9 +238,7 @@
 .pagination-success > li:first-child > button,
 .pagination-success > li:first-child > span,
 .pagination-success > li:last-child > button,
-.pagination-success > li:last-child > span,
-// .page-item,
-.page-link {
+.pagination-success > li:last-child > span {
     border: 2px solid $success-color;
     color: $success-color;
 }
@@ -268,9 +254,7 @@
 .pagination-success > li.active > button:hover,
 .pagination-success > li.active > span:hover,
 .pagination-success > li.active > button:focus,
-.pagination-success > li.active > span:focus,
-// .page-item,
-.page-link {
+.pagination-success > li.active > span:focus {
    background-color: $carrot;
    border-color: $carrot;
    color: $white-color;
@@ -282,9 +266,7 @@
 .pagination-warning > li:first-child > a,
 .pagination-warning > li:first-child > span,
 .pagination-warning > li:last-child > a,
-.pagination-warning > li:last-child > span,
-// .page-item,
-.page-link {
+.pagination-warning > li:last-child > span {
     border: 2px solid $warning-color;
     color: $warning-color;
 }
@@ -300,9 +282,7 @@
 .pagination-warning > li.active > a:hover,
 .pagination-warning > li.active > span:hover,
 .pagination-warning > li.active > a:focus,
-.pagination-warning > li.active > span:focus,
-// .page-item,
-.page-link {
+.pagination-warning > li.active > span:focus {
    background-color: $warning-color;
    border-color: $warning-color;
    color: $white-color;
@@ -314,9 +294,7 @@
 .pagination-danger > li:first-child > a,
 .pagination-danger > li:first-child > span,
 .pagination-danger > li:last-child > a,
-.pagination-danger > li:last-child > span,
-// .page-item,
-.page-link {
+.pagination-danger > li:last-child > span {
     border: 2px solid $danger-color;
     color: $danger-color;
 }
@@ -332,9 +310,7 @@
 .pagination-danger > li.active > a:hover,
 .pagination-danger > li.active > span:hover,
 .pagination-danger > li.active > a:focus,
-.pagination-danger > li.active > span:focus,
-// .page-item,
-.page-link {
+.pagination-danger > li.active > span:focus {
    background-color: $danger-color;
    border-color: $danger-color;
    color: $white-color;
