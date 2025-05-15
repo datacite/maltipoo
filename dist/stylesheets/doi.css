@@ -20831,7 +20831,8 @@ h3.member > a, .member.h3 > a, h3.member > i, .member.h3 > i, h3.member > .btn-i
 .pagination > li:first-child > button,
 .pagination > li:first-child > span,
 .pagination > li:last-child > button,
-.pagination > li:last-child > span {
+.pagination > li:last-child > span,
+.page-link {
   background-color: transparent;
   border: 2px solid #cdd2d5;
   border-radius: 20px;
@@ -20850,7 +20851,8 @@ h3.member > a, .member.h3 > a, h3.member > i, .member.h3 > i, h3.member > .btn-i
 .pagination > li.active > button:hover,
 .pagination > li.active > span:hover,
 .pagination > li.active > button:focus,
-.pagination > li.active > span:focus {
+.pagination > li.active > span:focus,
+.page-link {
   background-color: #e67e22;
   border-color: #e67e22;
   color: #FFFFFF;
@@ -20862,7 +20864,8 @@ h3.member > a, .member.h3 > a, h3.member > i, .member.h3 > i, h3.member > .btn-i
 .pagination-primary > li:first-child > button,
 .pagination-primary > li:first-child > span,
 .pagination-primary > li:last-child > button,
-.pagination-primary > li:last-child > span {
+.pagination-primary > li:last-child > span,
+.page-link {
   border: 2px solid #cdd2d5;
   color: #cdd2d5;
 }
@@ -20878,7 +20881,8 @@ h3.member > a, .member.h3 > a, h3.member > i, .member.h3 > i, h3.member > .btn-i
 .pagination-primary > li.active > button:hover,
 .pagination-primary > li.active > span:hover,
 .pagination-primary > li.active > button:focus,
-.pagination-primary > li.active > span:focus {
+.pagination-primary > li.active > span:focus,
+.page-link {
   background-color: #e67e22;
   border-color: #e67e22;
   color: #FFFFFF;
@@ -20890,7 +20894,8 @@ h3.member > a, .member.h3 > a, h3.member > i, .member.h3 > i, h3.member > .btn-i
 .pagination-info > li:first-child > button,
 .pagination-info > li:first-child > span,
 .pagination-info > li:last-child > button,
-.pagination-info > li:last-child > span {
+.pagination-info > li:last-child > span,
+.page-link {
   border: 2px solid #3498db;
   color: #3498db;
 }
@@ -20906,7 +20911,8 @@ h3.member > a, .member.h3 > a, h3.member > i, .member.h3 > i, h3.member > .btn-i
 .pagination-info > li.active > button:hover,
 .pagination-info > li.active > span:hover,
 .pagination-info > li.active > button:focus,
-.pagination-info > li.active > span:focus {
+.pagination-info > li.active > span:focus,
+.page-link {
   background-color: #e67e22;
   border-color: #e67e22;
   color: #FFFFFF;
@@ -20918,7 +20924,8 @@ h3.member > a, .member.h3 > a, h3.member > i, .member.h3 > i, h3.member > .btn-i
 .pagination-success > li:first-child > button,
 .pagination-success > li:first-child > span,
 .pagination-success > li:last-child > button,
-.pagination-success > li:last-child > span {
+.pagination-success > li:last-child > span,
+.page-link {
   border: 2px solid #2ecc71;
   color: #2ecc71;
 }
@@ -20934,7 +20941,8 @@ h3.member > a, .member.h3 > a, h3.member > i, .member.h3 > i, h3.member > .btn-i
 .pagination-success > li.active > button:hover,
 .pagination-success > li.active > span:hover,
 .pagination-success > li.active > button:focus,
-.pagination-success > li.active > span:focus {
+.pagination-success > li.active > span:focus,
+.page-link {
   background-color: #e67e22;
   border-color: #e67e22;
   color: #FFFFFF;
@@ -20946,7 +20954,8 @@ h3.member > a, .member.h3 > a, h3.member > i, .member.h3 > i, h3.member > .btn-i
 .pagination-warning > li:first-child > a,
 .pagination-warning > li:first-child > span,
 .pagination-warning > li:last-child > a,
-.pagination-warning > li:last-child > span {
+.pagination-warning > li:last-child > span,
+.page-link {
   border: 2px solid #e67e22;
   color: #e67e22;
 }
@@ -20962,7 +20971,8 @@ h3.member > a, .member.h3 > a, h3.member > i, .member.h3 > i, h3.member > .btn-i
 .pagination-warning > li.active > a:hover,
 .pagination-warning > li.active > span:hover,
 .pagination-warning > li.active > a:focus,
-.pagination-warning > li.active > span:focus {
+.pagination-warning > li.active > span:focus,
+.page-link {
   background-color: #e67e22;
   border-color: #e67e22;
   color: #FFFFFF;
@@ -20974,7 +20984,8 @@ h3.member > a, .member.h3 > a, h3.member > i, .member.h3 > i, h3.member > .btn-i
 .pagination-danger > li:first-child > a,
 .pagination-danger > li:first-child > span,
 .pagination-danger > li:last-child > a,
-.pagination-danger > li:last-child > span {
+.pagination-danger > li:last-child > span,
+.page-link {
   border: 2px solid #e74c3c;
   color: #e74c3c;
 }
@@ -20990,7 +21001,8 @@ h3.member > a, .member.h3 > a, h3.member > i, .member.h3 > i, h3.member > .btn-i
 .pagination-danger > li.active > a:hover,
 .pagination-danger > li.active > span:hover,
 .pagination-danger > li.active > a:focus,
-.pagination-danger > li.active > span:focus {
+.pagination-danger > li.active > span:focus,
+.page-link {
   background-color: #e74c3c;
   border-color: #e74c3c;
   color: #FFFFFF;
