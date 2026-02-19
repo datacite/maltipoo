@@ -3,7 +3,11 @@ name: Build and Commit Dist Files On Merge
 on:
   pull_request:
     types: [synchronize, opened, reopened]
+  workflow_dispatch:
 
+permissions:
+  contents: write
+  
 jobs:
   build:
     runs-on: ubuntu-latest
