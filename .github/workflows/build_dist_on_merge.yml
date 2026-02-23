@@ -3,13 +3,29 @@ name: Build and Commit Dist Files On Merge
 on:
   pull_request:
     types: [synchronize, opened, reopened]
+    paths-ignore:
+      - 'dist/**'
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: build-dist-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
   
 jobs:
   build:
+    if: >-
+      github.actor != 'github-actions[bot]' &&
+      (
+        github.event_name != 'workflow_dispatch' ||
+        !contains(fromJson('["main","master"]'), github.ref_name)
+      ) &&
+      (
+        github.event_name != 'pull_request' ||
+        github.event.pull_request.head.repo.full_name == github.repository
+      )
     runs-on: ubuntu-latest
 
     steps:
@@ -25,20 +41,36 @@ jobs:
         node-version: '22'
 
     - name: Install dependencies
-      run: yarn install
+      run: yarn install --frozen-lockfile
 
     - name: Build project
       run: yarn build
 
-    - name: Get last commit message
-      id: last-commit
+    - name: Commit dist changes (amend)
+      shell: bash
+      env:
+        TARGET_BRANCH: ${{ github.head_ref || github.ref_name }}
       run: |
-        echo "message=$(git log -1 --pretty=%s)" >> $GITHUB_OUTPUT
-        echo "author=$(git log -1 --pretty=\"%an <%ae>\")" >> $GITHUB_OUTPUT
+        set -euo pipefail
 
-    - uses: stefanzweifel/git-auto-commit-action@v5
-      with:
-        commit_message: ${{ steps.last-commit.outputs.message }}
-        commit_options: '--amend --no-edit'
-        push_options: '--force'
-        skip_fetch: true
+        git config --global --add safe.directory "$GITHUB_WORKSPACE"
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+        if [[ -z "$(git status --porcelain dist)" ]]; then
+          echo "No dist/ changes to commit."
+          exit 0
+        fi
+
+        git add -A dist
+
+        if git diff --cached --quiet; then
+          echo "No staged dist/ changes after add."
+          exit 0
+        fi
+
+        git commit --amend --no-edit
+
+        echo "Pushing amended commit to $TARGET_BRANCH"
+        git fetch origin "$TARGET_BRANCH" --depth=2
+        git push --force-with-lease origin "HEAD:$TARGET_BRANCH"
