@@ -5,7 +5,7 @@
 .footer {
   width: 100%;
   font-size: 16px;
-  color: $dark-gray;
+  color: $datacite-primary-dark-blue;
   background-color: $lighter-gray;
   padding: .75em 0;
   margin: 0;
@@ -20,7 +20,7 @@
     padding-left: 0;
   }
   a, a:hover, a:visited {
-    color: $dark-gray;
+    color: $datacite-primary-dark-blue;
   }
   h4.share {
     margin-bottom: .5em;
@@ -55,6 +55,6 @@
 
   .color-description {
     font-size: 18px;
-    color: $dark-gray;
+    color: $datacite-primary-dark-blue;
   }
 }

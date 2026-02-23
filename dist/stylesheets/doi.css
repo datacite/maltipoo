@@ -20514,7 +20514,7 @@ h3.member > a, .member.h3 > a, h3.member > i, .member.h3 > i, h3.member > .btn-i
 .footer {
   width: 100%;
   font-size: 16px;
-  color: #a3acb2;
+  color: #243B54;
   background-color: #f9fafa;
   padding: 0.75em 0;
   margin: 0;
@@ -20529,7 +20529,7 @@ h3.member > a, .member.h3 > a, h3.member > i, .member.h3 > i, h3.member > .btn-i
   padding-left: 0;
 }
 .footer a, .footer a:hover, .footer a:visited {
-  color: #a3acb2;
+  color: #243B54;
 }
 .footer h4.share, .footer .share.h4 {
   margin-bottom: 0.5em;
@@ -20562,7 +20562,7 @@ h3.member > a, .member.h3 > a, h3.member > i, .member.h3 > i, h3.member > .btn-i
 }
 .footer .color-description {
   font-size: 18px;
-  color: #a3acb2;
+  color: #243B54;
 }
 
 .dropdown-menu {
