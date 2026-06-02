@@ -14,19 +14,20 @@ or a JavaScript file<br>
 
 ## Local development
 
-Note: Node 22+  required
+Note: Node 22+ required (pinned in [`.tool-versions`](.tool-versions))
 
 ### Run directly on your OS
 #### Prerequisites
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [Node.js v22.x](https://nodejs.org/en/)
-- [Yarn Classic](https://classic.yarnpkg.com/)
+- [Node.js v22.x](https://nodejs.org/en/) (includes [Corepack](https://nodejs.org/api/corepack.html))
+- [Yarn 4](https://yarnpkg.com/) (installed automatically via Corepack from `packageManager` in `package.json`)
 
 #### Install and build
 1. `git clone https://github.com/datacite/maltipoo.git`
 2. `cd maltipoo`
-3. `yarn install`
-4. `yarn build`
+3. `corepack enable`
+4. `yarn install`
+5. `yarn build`
 
 The generated `css` files are placed in `dist/stylesheets`
 
