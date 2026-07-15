@@ -1,6 +1,6 @@
 {
   "name": "maltipoo",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "Base stylesheet for DataCite",
   "type": "module",
   "scripts": {
