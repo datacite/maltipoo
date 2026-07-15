@@ -4,10 +4,10 @@ Sass files for DataCite services, built on top of [Bootstrap](https://getbootstr
 
 ## Importing
 Import into a JavaScript project using yarn to add directly from the GitHub repo. Specify the version in the command.<br>
-example: `yarn add https://github.com/datacite/maltipoo#0.0.1`<br>
+example: `yarn add https://github.com/datacite/maltipoo#2.2.0`<br>
 
 Import TypeScript/JavaScript constants from the package root:<br>
-`import { DATACITE_PRIMARY_DARK_BLUE, DATACITE_PRIMARY_LIGHT_BLUE } from 'maltipoo';`<br>
+`import { RESOURCE_TYPE } from 'maltipoo';`<br>
 
 Import the stylesheet into a `css` file<br>
 `@import 'maltipoo/stylesheets/doi.min.css';`<br>
