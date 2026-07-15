@@ -4,12 +4,18 @@ Sass files for DataCite services, built on top of [Bootstrap](https://getbootstr
 
 ## Importing
 Import into a JavaScript project using yarn to add directly from the GitHub repo. Specify the version in the command.<br>
-example: `yarn add https://github.com/datacite/maltipoo#0.0.1`<br>
+example: `yarn add https://github.com/datacite/maltipoo#2.2.0`<br>
 
-Then import into a `css` file<br>
-`@import 'maltipoo/dist/stylesheets/doi.min.css';`<br>
+Import TypeScript/JavaScript constants from the package root:<br>
+`import { RESOURCE_TYPE } from 'maltipoo';`<br>
+
+Import the stylesheet into a `css` file<br>
+`@import 'maltipoo/stylesheets/doi.min.css';`<br>
 
 or a JavaScript file<br>
+`import 'maltipoo/stylesheets/doi.min.css';`<br>
+
+The legacy explicit dist path remains available if needed:<br>
 `import 'maltipoo/dist/stylesheets/doi.min.css';`<br>
 
 ## Local development
@@ -29,7 +35,7 @@ Note: Node 22+ required (pinned in [`.tool-versions`](.tool-versions))
 4. `yarn install`
 5. `yarn build`
 
-The generated `css` files are placed in `dist/stylesheets`
+The generated JavaScript and TypeScript declaration files are placed in `dist`, and the generated `css` files are placed in `dist/stylesheets`
 
 ## Issues
 
