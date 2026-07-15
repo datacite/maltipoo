@@ -1,0 +1,2 @@
+export declare const DATACITE_PRIMARY_DARK_BLUE: "#243B54";
+export declare const DATACITE_PRIMARY_LIGHT_BLUE: "#00B1E2";
